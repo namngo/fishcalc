@@ -1,5 +1,4 @@
 ﻿/// <reference path="reference.ts"/>
-/// <reference path="Components/LiterGallonConverter/LiterGallonController.ts"/>
 
 module FishCalc {
     export class Apps {

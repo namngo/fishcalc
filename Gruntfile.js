@@ -316,8 +316,23 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+    
+    ts: {
+      default : {
+        src: ['app/scripts/app/**/*.ts'],
+        dest: ['app/scripts/app.js'],
+        options: {
+          target: 'es5',
+          sourceMap: true,
+          declaration: true,
+          references: ['typings/**/*.d.ts']
+        }
+      }
     }
   });
+
+  grunt.loadNpmTasks('grunt-ts');
 
 
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
@@ -373,7 +388,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:eslint',
-    'test',
+    'test',    
     'build'
   ]);
 };

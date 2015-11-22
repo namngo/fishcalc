@@ -1,4 +1,5 @@
 ﻿/// <reference path="../../reference.ts"/>
+/// <reference path="NO3Model.ts"/>
 
 module FishCalc.Component.NO3 {
     import TankSizeUnit = Constant.TankSizeUnit;
