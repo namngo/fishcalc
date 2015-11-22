@@ -36,9 +36,9 @@ module.exports = function (grunt) {
         files: ['bower.json'],
         tasks: ['wiredep']
       },
-      js: {
-        files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['eslint']
+      ts: {
+        files: ['<%= config.app %>/scripts/{,*/}*.ts'],
+        tasks: ['ts']
       },
       jstest: {
         files: ['test/spec/{,*/}*.js'],
@@ -113,16 +113,6 @@ module.exports = function (grunt) {
         }]
       },
       server: '.tmp'
-    },
-
-    // Make sure code styles are up to par and there are no obvious mistakes
-    eslint: {
-      target: [
-        'Gruntfile.js',
-        '<%= config.app %>/scripts/{,*/}*.js',
-        '!<%= config.app %>/scripts/vendor/*',
-        'test/spec/{,*/}*.js'
-      ]
     },
 
     // Mocha testing framework configuration options
@@ -320,12 +310,12 @@ module.exports = function (grunt) {
     
     ts: {
       default : {
-        src: ['app/scripts/app/**/*.ts'],
+        src: ['app/scripts/app/Measurement/**/*.ts', 'app/scripts/app/Components/**/*.ts', 'app/scripts/app/*.ts', 'typings/**/*.d.ts'],
+        reference: "app/scripts/references.ts",
         dest: ['app/scripts/app.js'],
         options: {
           target: 'es5',
           sourceMap: true,
-          declaration: true,
           references: ['typings/**/*.d.ts']
         }
       }
@@ -387,7 +377,6 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'newer:eslint',
     'test',    
     'build'
   ]);
