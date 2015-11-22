@@ -1,4 +1,5 @@
-﻿/// <reference path="reference.ts"/>
+﻿/// <reference path="../references.ts"/>
+
 module FishCalc.Util {
     export function uuid() {
         var i = 0;

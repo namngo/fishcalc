@@ -1,5 +1,4 @@
-﻿/// <reference path="../../reference.ts"/>
-/// <reference path="NO3View.ts"/>
+﻿/// <reference path="../../../references.ts"/>>
 
 module FishCalc.Component.NO3 {
     export class NO3Controller {

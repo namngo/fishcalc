@@ -1,6 +1,4 @@
-﻿/// <reference path="../../reference.ts"/>
-/// <reference path="LiterGallonModel.ts"/>
-/// <reference path="LiterGallonView.ts"/>
+﻿/// <reference path="../../../references.ts"/>
 
 module FishCalc.Component.LiterToGallon {
     export class LiterGallonController {
