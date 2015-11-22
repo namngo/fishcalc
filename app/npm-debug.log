@@ -1,0 +1,118 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-typescrpit',
+1 verbose cli   '–save-dev' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of /home/nango/repo/fishcalc/package.json
+5 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/autoprefixer/package.json
+6 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt/package.json
+7 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-browser-sync/package.json
+8 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-concurrent/package.json
+9 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-contrib-clean/package.json
+10 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-contrib-concat/package.json
+11 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-contrib-copy/package.json
+12 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-contrib-cssmin/package.json
+13 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-contrib-htmlmin/package.json
+14 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-contrib-imagemin/package.json
+15 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-contrib-uglify/package.json
+16 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-contrib-watch/package.json
+17 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-eslint/package.json
+18 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-filerev/package.json
+19 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-mocha/package.json
+20 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-newer/package.json
+21 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-postcss/package.json
+22 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-svgmin/package.json
+23 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-usemin/package.json
+24 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/grunt-wiredep/package.json
+25 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/jit-grunt/package.json
+26 verbose installManyTop reading scoped package data from /home/nango/repo/fishcalc/node_modules/time-grunt/package.json
+27 info package.json grunt@0.4.5 No license field.
+28 info package.json grunt-browser-sync@2.1.3 No license field.
+29 info package.json grunt-contrib-clean@0.6.0 No license field.
+30 info package.json grunt-contrib-concat@0.5.1 No license field.
+31 info package.json grunt-contrib-cssmin@0.12.3 No license field.
+32 info package.json grunt-contrib-htmlmin@0.4.0 No license field.
+33 info package.json grunt-contrib-imagemin@0.9.4 No license field.
+34 info package.json grunt-contrib-uglify@0.8.1 No license field.
+35 info package.json grunt-contrib-watch@0.6.1 No license field.
+36 info package.json grunt-filerev@2.3.1 license should be a valid SPDX license expression
+37 info package.json grunt-mocha@0.4.13 No license field.
+38 info package.json grunt-svgmin@2.0.1 No license field.
+39 info package.json grunt-wiredep@2.0.0 No license field.
+40 verbose readDependencies loading dependencies from /home/nango/repo/fishcalc/package.json
+41 silly cache add args [ 'grunt-typescrpit', null ]
+42 verbose cache add spec grunt-typescrpit
+43 silly cache add args [ '–save-dev', null ]
+44 verbose cache add spec –save-dev
+45 silly cache add parsed spec Result {
+45 silly cache add   raw: 'grunt-typescrpit',
+45 silly cache add   scope: null,
+45 silly cache add   name: 'grunt-typescrpit',
+45 silly cache add   rawSpec: '',
+45 silly cache add   spec: '*',
+45 silly cache add   type: 'range' }
+46 silly addNamed grunt-typescrpit@*
+47 verbose addNamed "*" is a valid semver range for grunt-typescrpit
+48 silly addNameRange { name: 'grunt-typescrpit', range: '*', hasData: false }
+49 silly mapToRegistry name grunt-typescrpit
+50 silly mapToRegistry using default registry
+51 silly mapToRegistry registry https://registry.npmjs.org/
+52 silly mapToRegistry uri https://registry.npmjs.org/grunt-typescrpit
+53 verbose addNameRange registry:https://registry.npmjs.org/grunt-typescrpit not in flight; fetching
+54 silly cache add parsed spec Result {
+54 silly cache add   raw: '–save-dev',
+54 silly cache add   scope: null,
+54 silly cache add   name: null,
+54 silly cache add   rawSpec: '–save-dev',
+54 silly cache add   spec: '/home/nango/repo/fishcalc/app/–save-dev',
+54 silly cache add   type: 'local' }
+55 verbose request uri https://registry.npmjs.org/grunt-typescrpit
+56 verbose request no auth needed
+57 info attempt registry request try #1 at 02:36:23
+58 verbose request id e33c13edaa8be6ea
+59 http request GET https://registry.npmjs.org/grunt-typescrpit
+60 error addLocal Could not install /home/nango/repo/fishcalc/app/–save-dev
+61 http 404 https://registry.npmjs.org/grunt-typescrpit
+62 verbose headers { 'content-type': 'application/json',
+62 verbose headers   'cache-control': 'max-age=0',
+62 verbose headers   'content-length': '2',
+62 verbose headers   'accept-ranges': 'bytes',
+62 verbose headers   date: 'Sun, 18 Oct 2015 09:36:25 GMT',
+62 verbose headers   via: '1.1 varnish',
+62 verbose headers   age: '0',
+62 verbose headers   connection: 'keep-alive',
+62 verbose headers   'x-served-by': 'cache-sjc3131-SJC',
+62 verbose headers   'x-cache': 'MISS',
+62 verbose headers   'x-cache-hits': '0',
+62 verbose headers   'x-timer': 'S1445160985.080622,VS0,VE87' }
+63 silly get cb [ 404,
+63 silly get   { 'content-type': 'application/json',
+63 silly get     'cache-control': 'max-age=0',
+63 silly get     'content-length': '2',
+63 silly get     'accept-ranges': 'bytes',
+63 silly get     date: 'Sun, 18 Oct 2015 09:36:25 GMT',
+63 silly get     via: '1.1 varnish',
+63 silly get     age: '0',
+63 silly get     connection: 'keep-alive',
+63 silly get     'x-served-by': 'cache-sjc3131-SJC',
+63 silly get     'x-cache': 'MISS',
+63 silly get     'x-cache-hits': '0',
+63 silly get     'x-timer': 'S1445160985.080622,VS0,VE87' } ]
+64 verbose stack Error: ENOENT: no such file or directory, open '/home/nango/repo/fishcalc/app/–save-dev'
+64 verbose stack     at Error (native)
+65 verbose cwd /home/nango/repo/fishcalc/app
+66 error Linux 3.16.0-38-generic
+67 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "grunt-typescrpit" "–save-dev"
+68 error node v4.2.1
+69 error npm  v2.14.7
+70 error path /home/nango/repo/fishcalc/app/–save-dev
+71 error code ENOENT
+72 error errno -2
+73 error syscall open
+74 error enoent ENOENT: no such file or directory, open '/home/nango/repo/fishcalc/app/–save-dev'
+74 error enoent This is most likely not a problem with npm itself
+74 error enoent and is related to npm not being able to find a file.
+75 verbose exit [ -2, true ]

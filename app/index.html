@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Fishtank calculation</title>
+    <meta name="description" content="Fishtank calculation, all of the calculation for planted fish tank fertilizer , CO2, PH calculations.">
+    <meta name="keywords" content="Fish tank, fertilizer, CO2, PH, NO3, KHPO4, KNO3, K2SO4, Fe, carbon dioxide, Potassium nitrate, potassium hydrogen phosphate, Potassium sulfate, iron, CSM+B, calculator">
+    <meta name="author" content="Nam Ngo,">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <script type="text/javascript" src="Scripts/libs/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="Scripts/libs/mithril.min.js"></script>
+    <script type="text/javascript" src="Scripts/libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Scripts/libs//lodash.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Fishtank calculator</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#macro">Macro Fertilizer</a></li>
+                    <li><a href="#micro">Micro Fertilizer</a></li>
+                    <li><a href="#co2">CO2/PH</a></li>
+                    <li><a href="#others">Others</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <nav>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#divTankSize">Tank Size</a></li>
+                    </ul>
+                </nav> 
+            </div>
+            <div class="col-lg-9">
+
+                <div id="divTankSize">
+                </div>
+                <div id="divKNO3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content"></div>
+</body>
+</html>
