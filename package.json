@@ -1,0 +1,50 @@
+{
+  "name": "tankcalc",
+  "version": "1.0.0",
+  "description": "A website to calculate water parametters for fish tanks.",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tankcalc"
+  },
+  "keywords": [
+    "Fish",
+    "tank",
+    "fertilizer",
+    "CO2",
+    "PH",
+    "NO3",
+    "KHPO4",
+    "KNO3",
+    "K2SO4",
+    "Fe",
+    "carbon",
+    "dioxide",
+    "Potassium",
+    "nitrate",
+    "potassium",
+    "hydrogen",
+    "phosphate",
+    "Potassium",
+    "sulfate",
+    "iron",
+    "CSM+B",
+    "calculator"
+  ],
+  "author": "Nam Ngo",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^0.14.55",
+    "@types/react-dom": "^0.14.19",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.0.0-beta.17",
+    "source-map-loader": "^0.1.5",
+    "typescript": "^2.1.4"
+  }
+}
