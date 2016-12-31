@@ -1,10 +1,12 @@
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var path = require('path');
+var webpack = require("webpack");
 
 module.exports = {
     entry: {
         javascript: "./src/app.tsx",
-        html: "./src/index.html"
+        html: "./src/index.html",
+        vendor: ["jquery", "lodash", "react", "react-dom"]
     },
 
     // entry: "./src/app.tsx",
@@ -44,17 +46,18 @@ module.exports = {
             { from: './src/styles/tankcalc.css', to: 'styles/tankcalc.css' },
         ], {
 
-        })
+        }),
+        new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js")
     ],
 
     // When importing a module whose path matches one of the following, just
     // assume a corresponding global variable exists and use that instead.
     // This is important because it allows us to avoid bundling all of our
     // dependencies, which allows browsers to cache those libraries between builds.
-    externals: {
-        "react": "React",
-        "react-dom": "ReactDOM",
-        "jquery": "Jquery",
-       // "lodash": "Lodash"
-    },
+    // externals: {
+    //     "react": "React",
+    //     "react-dom": "ReactDOM",
+    //     "jquery": "Jquery",
+    //    // "lodash": "Lodash"
+    // },
 };
