@@ -1,10 +1,19 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
 
-import { Hello } from "./components/Hello";
+const MyAwesomeReactComponent = () => (
+  <RaisedButton label="Default" />
+);
+
+const App = () => (
+  <MuiThemeProvider>
+    <MyAwesomeReactComponent />
+  </MuiThemeProvider>
+);
 
 ReactDOM.render(
-    <Hello compiler="TypeScript" framework="7" />,
-    
-    document.getElementById("example")
+  <App />,
+  document.getElementById('app')
 );
